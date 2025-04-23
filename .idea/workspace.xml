@@ -21,24 +21,15 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f364aff3-7f13-4072-af06-77fef8995bfd" name="Changes" comment="">
+    <list default="true" id="f364aff3-7f13-4072-af06-77fef8995bfd" name="Changes" comment="Aggiunta di:&#10;- pulsante di avvio&#10;- funzione per estrarre un numero random&#10;- funzione per passare al secondo activity main&#10;- array associativo con le relative immagini dei dadi&#10;- visualizzazione del dado corretto">
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/dadi/dado1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/dadi/dado2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/dadi/dado3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/dadi/dado4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/dadi/dado5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/dadi/dado6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/rollthedice/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/rollthedice/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +78,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="_Designer_Tab" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -199,7 +190,20 @@
       <option name="presentableId" value="Default" />
       <updated>1745347676599</updated>
     </task>
+    <task id="LOCAL-00001" summary="Aggiunta di:&#10;- pulsante di avvio&#10;- funzione per estrarre un numero random&#10;- funzione per passare al secondo activity main&#10;- array associativo con le relative immagini dei dadi&#10;- visualizzazione del dado corretto">
+      <option name="closed" value="true" />
+      <created>1745422891060</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1745422891060</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Aggiunta di:&#10;- pulsante di avvio&#10;- funzione per estrarre un numero random&#10;- funzione per passare al secondo activity main&#10;- array associativo con le relative immagini dei dadi&#10;- visualizzazione del dado corretto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta di:&#10;- pulsante di avvio&#10;- funzione per estrarre un numero random&#10;- funzione per passare al secondo activity main&#10;- array associativo con le relative immagini dei dadi&#10;- visualizzazione del dado corretto" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
