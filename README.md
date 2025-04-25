@@ -11,8 +11,10 @@ Un'app che simula il lancio di un dado. L'utente può scegliere il numero da ind
 2. 🚀[Installazione](#-installazione)
 3. 🛠️[Tecnologie utilizzate](#-tecnologie-utilizzate)
 4. 📱[Guida all'uso](#-guida-alluso)
+5. 🖥️[Requisiti Minimi](#-requisiti-minimi)
 6. 👤[Autore](#-autore)
 7. 🖼️[Schermate](#-schermate)
+8. ⚠️[Stato del Progetto](#-stato-del-progetto)
 
 ---
 
@@ -53,10 +55,29 @@ Un'app che simula il lancio di un dado. L'utente può scegliere il numero da ind
 
 ---
 
+## 🖥️ Requisiti Minimi
+📱 **Sistema operativo**: Android 16 o superiore
+
+---
+
 ## 👤 Autore
 
 Creato con ❤️ da [Raffaele Graziani](https://github.com/raffaeleGraz)
+- 📧 Email: raffaelegraziani@risikamente.it
+- GitHub: [@raffaeleGraz](https://github.com/raffaeleGraz)
 
 ---
 
 ## 🖼️ Schermate
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="assets/home.png" alt="Screenshot 1" width="30%" />
+  <img src="assets/indovina.png" alt="Screenshot 2" width="30%" />
+  <img src="assets/vittoria.png" alt="Screenshot 3" width="30%" />
+</div>
+
+---
+
+## ⚠️ Status del Progetto
+
+Questo progetto è ancora in fase di sviluppo. Alcune funzionalità potrebbero non essere completamente implementate o potrebbero subire modifiche
