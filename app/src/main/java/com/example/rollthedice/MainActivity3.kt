@@ -4,6 +4,13 @@ import android.os.Bundle
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import nl.dionsegijn.konfetti.xml.KonfettiView
+import nl.dionsegijn.konfetti.core.Party
+import nl.dionsegijn.konfetti.core.Position
+import nl.dionsegijn.konfetti.core.emitter.Emitter
+import java.util.concurrent.TimeUnit
+import android.graphics.Color
+
 
 class MainActivity3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +27,20 @@ class MainActivity3 : AppCompatActivity() {
             esitoView.setImageResource(R.drawable.sconfitta)
         } else {
             esitoView.setImageResource(R.drawable.vittoria)
+
+            val konfettiView = findViewById<KonfettiView>(R.id.konfettiView) //Recupera i coriandoli per la vittoria
+            konfettiView.start(
+                Party(
+                    speed = 30f, // Imposta la velocità
+                    maxSpeed = 50f, // Velocità massima raggiungibile
+                    damping = 0.9f, // Rallentamento dei coriandoli
+                    spread = 360, // Angolo in cui verranno emessi i coriandoli (360 = in ogni direzione)
+                    colors = listOf(Color.YELLOW, Color.GREEN, Color.MAGENTA, Color.RED), // Lista dei colori
+                    emitter = Emitter(duration = 1000, TimeUnit.MILLISECONDS).max(200), // Durata: 1000ms (1s) in cui vengono emessi 200 coriandoli
+                    position = Position.Relative(0.0, 0.5) // Posizione da cui partono (orizzontalmente a sinistra e verticalmente al centro)
+
+                )
+            )
         }
 
         val diceView= findViewById<ImageView>(R.id.diceView) // Recupera l'imageView dei dadi
