@@ -12,20 +12,14 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        val startBtn = findViewById<ImageButton>(R.id.startBtn)
+        val startBtn = findViewById<ImageButton>(R.id.indovinaBtn)
         startBtn.setOnClickListener{
-            val numero = estrazione()
-            intent(numero)
+            intent()
         }
     }
 
-    private fun estrazione():Int {
-        return (1..6).random()
-    }
-
-    private fun intent(numero:Int){
-        var intent = Intent(this, MainActivity3::class.java)
-        intent.putExtra("numero", numero)
+    private fun intent() {
+        val intent = Intent(this, MainActivity2::class.java)
         startActivity(intent)
     }
 }

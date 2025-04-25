@@ -9,12 +9,21 @@ class MainActivity3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main2)
+        setContentView(R.layout.activity_main3)
 
-        val numero = intent.getIntExtra("numero", -1)
-        val diceView= findViewById<ImageView>(R.id.diceView)
+        val randomNumber = intent.getIntExtra("randomNumber", -1) // Recupera il numero random
+        val userNumber = intent.getIntExtra("userNumber", -1) // Recupera il numero dell'utente
 
-        val imgDiceResources = when(numero) {
+        // CONDIZIONE PER L'ESITO
+        val esitoView = findViewById<ImageView>(R.id.esitoView)
+        if(userNumber != randomNumber) {
+            esitoView.setImageResource(R.drawable.sconfitta)
+        } else {
+            esitoView.setImageResource(R.drawable.vittoria)
+        }
+
+        val diceView= findViewById<ImageView>(R.id.diceView) // Recupera l'imageView dei dadi
+        val imgDiceResources = when(randomNumber) {
             1 -> R.drawable.dado1
             2 -> R.drawable.dado2
             3 -> R.drawable.dado3
