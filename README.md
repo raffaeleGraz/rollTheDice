@@ -7,9 +7,9 @@ Un'app che simula il lancio di un dado. L'utente può scegliere il numero da ind
 ---
 
 ## 📑 Indice:
-1. 📋[Caratteristiche Principali](#-caratteristiche-Principali)
+1. 📋[Caratteristiche Principali](#-caratteristiche-principali)
 2. 🚀[Installazione](#-installazione)
-3. 🛠️[Tecnologie utilizzate](#-tecnologie-utilizzate)
+3. 🛠️[Tecnologie Utilizzate](#-tecnologie-utilizzate)
 4. 📱[Guida all'uso](#-guida-alluso)
 5. 🖥️[Requisiti Minimi](#-requisiti-minimi)
 6. 👤[Autore](#-autore)
@@ -36,7 +36,7 @@ Un'app che simula il lancio di un dado. L'utente può scegliere il numero da ind
 
 ---
 
-## 🛠️ Tecnologie utilizzate
+## 🛠️ Tecnologie Utilizzate
 
 - 🧑‍💻 **Kotlin** – Linguaggio principale
 - 🧱 **XML** – Layout e UI
@@ -78,6 +78,6 @@ Creato con ❤️ da [Raffaele Graziani](https://github.com/raffaeleGraz)
 
 ---
 
-## ⚠️ Status del Progetto
+## ⚠️ Stato del Progetto
 
 Questo progetto è ancora in fase di sviluppo. Alcune funzionalità potrebbero non essere completamente implementate o potrebbero subire modifiche
