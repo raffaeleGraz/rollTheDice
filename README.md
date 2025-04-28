@@ -48,7 +48,7 @@ Un'app che simula il lancio di un dado. L'utente può scegliere il numero da ind
 ## 📱 Guida all'uso
 
 1. 📲 Avvia l'app.
-2. 🎯 Premi il pulsante **"Scommetti"** per iniziare.
+2. 🎯 Premi il pulsante **"Indovina"** per iniziare.
 3. 🧠 Inserisci il tuo pronostico scegliendo un numero da 1 a 6.
 4. 🎲 Premi il tasto **"Lancia"**
 5. 📊 Visualizza il risultato sulla schermata.
