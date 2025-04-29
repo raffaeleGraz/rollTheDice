@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.ImageButton
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
@@ -20,9 +21,19 @@ class MainActivity2 : AppCompatActivity() {
             val inputNumberS = inputNumber.text.toString() // Prima a stringa
             val userNumber = inputNumberS.toIntOrNull() // A intero
 
-            if(userNumber != null && userNumber > 0 && userNumber <=6) { // Controllo del numero inserito
-                val randomNumber = estrazione()
-                intent(randomNumber, userNumber)
+            if(userNumber != null) {
+                if(userNumber in 1..6) {
+                    Toast.makeText(this, "Dado lanciato!", Toast.LENGTH_SHORT).show() // Toast per il dado lanciato
+
+                    val randomNumber = estrazione()
+                    intent(randomNumber, userNumber)
+                } else {
+                    //messaggio di errore
+                    Toast.makeText(this, "Input errato!", Toast.LENGTH_SHORT).show()
+                }
+            } else {
+                //messaggio di errore
+                Toast.makeText(this, "Inserisci un numero!", Toast.LENGTH_SHORT).show()
             }
         }
     }
