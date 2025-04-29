@@ -2,6 +2,7 @@ package com.example.rollthedice
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.Toast
@@ -13,6 +14,8 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main2)
+
+        val TAG = "MainActivity2"
 
         val inputNumber = findViewById<EditText>(R.id.inputNumber) // Recupero l'input dell'utente
         val lanciaBtn = findViewById<ImageButton>(R.id.lanciaBtn) // Recupero il bottone
@@ -27,12 +30,15 @@ class MainActivity2 : AppCompatActivity() {
 
                     val randomNumber = estrazione()
                     intent(randomNumber, userNumber)
+                    Log.d(TAG, "Lanciata la terza activity")
                 } else {
-                    //messaggio di errore
+                    //messaggi di errore
+                    Log.d(TAG, "Input errato")
                     Toast.makeText(this, "Input errato!", Toast.LENGTH_SHORT).show()
                 }
             } else {
-                //messaggio di errore
+                //messaggi di errore
+                Log.d(TAG, "Input vuoto")
                 Toast.makeText(this, "Inserisci un numero!", Toast.LENGTH_SHORT).show()
             }
         }

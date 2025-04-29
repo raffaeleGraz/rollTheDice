@@ -10,6 +10,7 @@ import nl.dionsegijn.konfetti.core.Position
 import nl.dionsegijn.konfetti.core.emitter.Emitter
 import java.util.concurrent.TimeUnit
 import android.graphics.Color
+import android.util.Log
 
 
 class MainActivity3 : AppCompatActivity() {
@@ -18,8 +19,12 @@ class MainActivity3 : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main3)
 
+        val TAG = "MainActivity3"
+
         val randomNumber = intent.getIntExtra("randomNumber", -1) // Recupera il numero random
         val userNumber = intent.getIntExtra("userNumber", -1) // Recupera il numero dell'utente
+        Log.d(TAG, "Numero input: " + userNumber)
+        Log.d(TAG, "Numero random: " + randomNumber)
 
         // CONDIZIONE PER L'ESITO
         val esitoView = findViewById<ImageView>(R.id.esitoView)
