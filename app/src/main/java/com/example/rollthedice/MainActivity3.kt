@@ -27,11 +27,11 @@ class MainActivity3 : AppCompatActivity() {
         Log.d(TAG, "Numero random: " + randomNumber)
 
         // CONDIZIONE PER L'ESITO
-        val esitoView = findViewById<ImageView>(R.id.esitoView)
-        if(userNumber != randomNumber) {
-            esitoView.setImageResource(R.drawable.sconfitta)
+        val esitoView = findViewById<ImageView>(R.id.esitoView) // Recupero le immagini per visualizzare il risultato
+        if(userNumber != randomNumber) { // Se l'utente non ha indovinato
+            esitoView.setImageResource(R.drawable.sconfitta) // Imposto l'immagine per la sconfitta
         } else {
-            esitoView.setImageResource(R.drawable.vittoria)
+            esitoView.setImageResource(R.drawable.vittoria) // Imposto l'immagine per la vittoria
 
             val konfettiView = findViewById<KonfettiView>(R.id.konfettiView) //Recupera i coriandoli per la vittoria
             konfettiView.start(
@@ -49,6 +49,7 @@ class MainActivity3 : AppCompatActivity() {
         }
 
         val diceView= findViewById<ImageView>(R.id.diceView) // Recupera l'imageView dei dadi
+        // when() Funziona come un case in java, associando ad ogni numero la sua corrispettiva immagine
         val imgDiceResources = when(randomNumber) {
             1 -> R.drawable.dado1
             2 -> R.drawable.dado2
@@ -58,6 +59,6 @@ class MainActivity3 : AppCompatActivity() {
             6 -> R.drawable.dado6
             else -> {R.drawable.dado1}
         }
-        diceView.setImageResource(imgDiceResources as Int)
+        diceView.setImageResource(imgDiceResources as Int) // Imposta l'immagine in base al numero
     }
 }

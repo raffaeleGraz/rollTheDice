@@ -18,26 +18,26 @@ class MainActivity2 : AppCompatActivity() {
         val TAG = "MainActivity2"
 
         val inputNumber = findViewById<EditText>(R.id.inputNumber) // Recupero l'input dell'utente
-        val lanciaBtn = findViewById<ImageButton>(R.id.lanciaBtn) // Recupero il bottone
-        lanciaBtn.setOnClickListener{
-            // CONVERSIONE EDITTEXT A INTERO
+        val lanciaBtn = findViewById<ImageButton>(R.id.lanciaBtn) // Recupero il pulsante
+        lanciaBtn.setOnClickListener{ // Associo ad esso un comportamento
+            // CONVERSIONE EDIT TEXT A INTERO
             val inputNumberS = inputNumber.text.toString() // Prima a stringa
-            val userNumber = inputNumberS.toIntOrNull() // A intero
+            val userNumber = inputNumberS.toIntOrNull() // Poi a intero
 
-            if(userNumber != null) {
-                if(userNumber in 1..6) {
+            if(userNumber != null) { // Verifico per prima cosa che non sia nullo
+                if(userNumber in 1..6) { // Se il numero in input è compreso tra 1 e 6 allora:
                     Toast.makeText(this, "Dado lanciato!", Toast.LENGTH_SHORT).show() // Toast per il dado lanciato
 
-                    val randomNumber = estrazione()
-                    intent(randomNumber, userNumber)
+                    val randomNumber = estrazione() // Simulo il lancio del dado generando un numero random
+                    intent(randomNumber, userNumber) // Richiamo l'ultima activity passando come parametri i due numeri: il numero random e l'input dell'utente
                     Log.d(TAG, "Lanciata la terza activity")
                 } else {
-                    //messaggi di errore
+                    // Se il numero non è valido
                     Log.d(TAG, "Input errato")
                     Toast.makeText(this, "Input errato!", Toast.LENGTH_SHORT).show()
                 }
             } else {
-                //messaggi di errore
+                // Se il numero è nullo
                 Log.d(TAG, "Input vuoto")
                 Toast.makeText(this, "Inserisci un numero!", Toast.LENGTH_SHORT).show()
             }
@@ -45,11 +45,12 @@ class MainActivity2 : AppCompatActivity() {
     }
 
     private fun estrazione():Int {
-        return (1..6).random()
+        return (1..6).random() // Genero un numero random compreso tra 1 e 6
     }
 
     private fun intent(randomNumber: Int, userNumber: Int) {
         val intent = Intent(this, MainActivity3::class.java)
+        // PutExtra per passare parametri tra activity
         intent.putExtra("randomNumber", randomNumber)
         intent.putExtra("userNumber", userNumber)
         startActivity(intent)
